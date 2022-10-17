@@ -31,7 +31,7 @@ btnEl.addEventListener("click", function (){
         // change cells color
        thisCell.addEventListener("click", function(){
             thisCell.classList.add("light_blue");
-            console.log(thisCell);
+            console.log(i);
        })
 
     }
