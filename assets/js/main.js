@@ -7,11 +7,7 @@
     2.2. Viene emesso un messaggio in console con il numero della cella cliccata.
 */
 
-/* 1. Creazione della griglia:
-*/
-// Seleziono il container nel markup
-const containerEl = document.querySelector('.container'); 
-const cellNumber = 100;
+// 1. Creazione della griglia:
 
 /* function cellGenerator () */
 function cellGenerator (cellNumber, domEl){
@@ -22,14 +18,23 @@ function cellGenerator (cellNumber, domEl){
 
 }
 
-cellGenerator(cellNumber, containerEl);
-
+const containerEl = document.querySelector('.container'); 
+const cellNumber = 100;
 
 
 /* 2. Aggiunta dell'event-listener al click:
     - creo il bottone nel markup
     - btn.addEventListener (click) --- si genera la griglia
     - cell.addEventlister (click) -- in console n. della cella (ciclo for)
-
 */
+
+const btnEl = document.querySelector("button");
+
+const cellEl = document.querySelector(".container > .cell")
+
+/* Generate grid */
+btnEl.addEventListener("click", function (){
+    cellGenerator(cellNumber,containerEl);
+})
+
 
