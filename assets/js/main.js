@@ -8,13 +8,20 @@
 */
 
 /* 1. Creazione della griglia:
-    - creo un container nel markup
-    - inserisco nel container le celle tramite js
-    - ciclo la singola cella per creare la griglia
 */
 
+// Seleziono il container nel markup
+const containerEl = document.querySelector('.container');
 
+// Creo la cella, assegno il numero di celle ad una costante, seleziono tutte le celle
+const cell = `<div class="cell"></div>`
+const cellNumbers = 100;
+const cellList = document.getElementsByClassName('.cell');
 
+// Ciclo la singola cella col numero per il numero di celle
+for(i = 1; i <= cellNumbers; i++){
+    containerEl.innerHTML += `<div class="cell">${i}</div>`;
+}
 
 
 
