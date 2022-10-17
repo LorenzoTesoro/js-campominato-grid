@@ -24,7 +24,7 @@ btnEl.addEventListener("click", function (){
     const cellNumber = 100;
     cellGenerator(cellNumber,containerEl);
 
-    const cellList = document.getElementsByClassName("cell")
+    const cellList = document.querySelectorAll(".cell")
 
     for(let i = 0; i < cellList.length; i++){
        const thisCell = cellList[i];
